@@ -33,6 +33,7 @@ h1 {
 }
 
 #words {
+     alignment-baseline: center;
      width: 910px;
      font-family: comic sans ms;
      color: black;
@@ -59,6 +60,7 @@ h1 {
 }
 
 #words2 {
+     alignment-baseline: central; 
      width: 910px;
      font-family: comic sans ms;
      color: black;
