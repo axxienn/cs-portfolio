@@ -17,6 +17,8 @@
      background-color: white;
 }
 
+/* about me */
+
 h1 {
      font-size: 40px;
      width: 70%;
@@ -102,3 +104,27 @@ h1 {
      overflow-y: auto;
 }
 
+/* about me ends */
+ 
+/* hardware */
+  
+#motherboard {
+     
+     font-family: cursive;
+     font-size: x-large;
+     width: 800px;
+     height: 280px; 
+     border: 3px solid;
+     padding: 20px;
+     margin-left: 80px;
+     margin-bottom: 0px;
+}
+
+.motherboard {
+     float: right;
+     width: 350px; 
+}
+ 
+ 
+ 
+ 
