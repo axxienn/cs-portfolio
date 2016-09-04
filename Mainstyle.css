@@ -40,7 +40,6 @@ h1 {
      width: 1200px;
      height: 400px; 
      font-family: comic sans ms;
-     color: black;
      font-size: x-large;
      padding: 10px;
      margin-right: 0px;
@@ -106,25 +105,76 @@ h1 {
 
 /* about me ends */
  
+ 
 /* hardware */
-  
+
+#bookmark {
+     float: right;
+     width: 200px;
+     border: 3px solid;
+     border-radius: 3%;
+     font-family: cursive;
+     font-size: larger;
+     padding: 20px;
+     margin-right: 70px;
+}
+
+h2 {
+     font-size: 40px;
+     width: 70%;
+     text-align: center;
+     margin-top: 4%;
+     margin-left: 15%;
+     margin-bottom: 50px;
+     color: black;
+     background-color: rgb(102, 255, 255);
+     border-color: black;
+     border-style: solid;
+     border-radius: 100px; 
+     padding: 3px;
+     font-family: cursive; 
+}
+
 #motherboard {
-     
      font-family: cursive;
      font-size: x-large;
      width: 800px;
      height: 280px; 
      border: 3px solid;
-     padding: 20px;
+     border-radius: 4%;
+     border-color: rgb(102, 255, 255);
+     padding: 30px;
      margin-left: 80px;
-     margin-bottom: 0px;
+     margin-bottom: 10px;
 }
 
 .motherboard {
      float: right;
      width: 350px; 
 }
+
+#CPU {
+     width: 900px;
+     height: 300px; 
+     font-family: comic sans ms;
+     font-size: x-large;
+     padding: 30px;
+     margin-left: 45px;
+     margin-bottom: 0px;
+} 
+
+.CPU {
+     width: 300px;
+     float: left;
+     border: 3px solid;
+     border-color: rgb(102, 255, 255);
+     padding: 20px;
+     border-radius: 7%;
+     margin-right: 5%;
+     margin-bottom: 0px;
+     overflow-y: auto;
+}
  
- 
+ /* hardware ends */
  
  
