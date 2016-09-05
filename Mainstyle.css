@@ -1,8 +1,8 @@
 #navbar {
      text-align: center;
      background-color: rgb(74, 55, 19);
-     margin-left: 7px;
-     margin-right: 7px;
+     margin-left: 3px;
+     margin-right: 3px;
 
 }
 
@@ -38,14 +38,14 @@
           }
           
           #words {
-               width: 1200px;
+               width: 1100px;
                height: 400px; 
                font-family: comic sans ms;
                font-size: x-large;
                padding: 10px;
-               margin-right: 0px;
-               margin-left: 60px;
-               margin-bottom: 0px; 
+               margin-left: 120px;
+               margin-top: 50px; 
+               text-align: center
           }
           
           .pic {
@@ -57,7 +57,7 @@
                border-radius: 7%;
                margin-right: 3%;
                margin-left: 5%;
-               margin-bottom: 0px;
+               margin-top: 20px;
                overflow-y: auto;
           }
           
@@ -73,7 +73,7 @@
                margin-left: 40px;
                margin-right: 20px;
                margin-bottom: 20px;
-               margin-top: 0px; 
+               margin-top: 40px; 
           
           }
           
@@ -116,7 +116,7 @@
           border-radius: 20%;
           font-family: cursive;
           font-size: larger;
-          margin-left: 50px;
+          margin-left: 70px;
           text-align: center;
           border-color: rgb(74, 55, 19);
      }
@@ -129,7 +129,7 @@
           margin-left: 15%;
           margin-bottom: 50px;
           color: black;
-          background-color: rgb(102, 255, 255);
+          background-color: rgb(3, 226, 226);
           border-color: black;
           border-style: solid;
           border-radius: 100px; 
@@ -154,10 +154,11 @@
                height: 280px; 
                border: 3px solid;
                border-radius: 4%;
-               border-color: rgb(102, 255, 255);
+               border-color: rgb(3, 201, 201);
                padding: 30px;
                margin-left: 360px;
                margin-bottom: 10px;
+               margin-top: 20px;
           }
           
           .motherboard {
@@ -171,7 +172,7 @@
                font-size: xx-large;
                font-weight: bold;
                width: 800px;
-               margin-top: 60px;
+               margin-top: 70px;
                margin-left: 360px;
                text-align: center;
           }
@@ -182,16 +183,18 @@
                font-family: comic sans ms;
                font-size: x-large;
                margin-left: 360px;
+               margin-top: 20px;
           } 
           
           .CPU {
                width: 300px;
                float: left;
                border: 3px solid;
-               border-color: rgb(102, 255, 255);
+               border-color: rgb(3, 201, 201);
                padding: 20px;
                border-radius: 7%;
                margin-right: 5%;
+               margin-top: 14px;
           }
      
      /* RAM */
@@ -200,7 +203,7 @@
                font-size: xx-large;
                font-weight: bold;
                width: 800px;
-               margin-top: 50px;
+               margin-top: 60px;
                margin-left: 360px;
                text-align: center;
           }
@@ -216,10 +219,11 @@
                width: 325px;
                float: right;
                border: 3px solid;
-               border-color: rgb(102, 255, 255);
+               border-color: rgb(3, 201, 201);
                padding: 15px;
                border-radius: 7%;
                margin-left: 30px;
+               margin-top: 30px;
           }
           
      /* Hard Drive */
@@ -228,9 +232,28 @@
                font-size: xx-large;
                font-weight: bold;
                width: 800px;
-               margin-top: 50px;
+               margin-top: 80px;
                margin-left: 360px;
                text-align: center;
+          }
+          
+          #hd {
+               font-family: cursive;
+               font-size: x-large;
+               width: 800px;
+               height: 280px; 
+               border: 3px solid;
+               border-radius: 4%;
+               border-color: rgb(3, 201, 201);
+               padding: 30px;
+               margin-left: 360px;
+               margin-bottom: 10px;
+          }
+          
+          .hd {
+               width: 350px;
+               margin-right: 30px;
+               float: left;
           }
           
      /* How */
@@ -239,9 +262,23 @@
                font-size: xx-large;
                font-weight: bold;
                width: 800px;
-               margin-top: 50px;
+               margin-top: 70px;
                margin-left: 360px;
+               margin-bottom: 10px;
                text-align: center;
+          }
+          
+          #how {
+               font-family: cursive;
+               font-size: x-large;
+               width: 800px;
+               height: 200px; 
+               border: 3px solid;
+               border-radius: 4%;
+               border-color: rgb(3, 201, 201);
+               padding: 30px;
+               margin-left: 360px;
+               margin-bottom: 10px;          
           }
           
      /* KMM */
@@ -250,9 +287,31 @@
                font-size: xx-large;
                font-weight: bold;
                width: 800px;
-               margin-top: 50px;
+               margin-top: 70px;
                margin-left: 360px;
                text-align: center;
+          }
+          
+          .KMM {
+               width: 230px;
+               padding: 20px;
+               border: 3px solid;
+               border-color: rgb(3, 201, 201);
+               border-radius: 7%;
+               margin-right: 55px;
+               margin-top: 30px;
+               float: right;
+          }
+          
+          #KMM {
+               font-family: cursive;
+               font-size: x-large;
+               width: 800px;
+               height: 200px; 
+               padding: 30px;
+               margin-left: 360px;
+               margin-bottom: 10px;
+               margin-top: 277px;
           }
  
  /* hardware ends */
