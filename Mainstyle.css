@@ -241,7 +241,7 @@
                font-family: cursive;
                font-size: x-large;
                width: 800px;
-               height: 280px; 
+               height: 250px; 
                border: 3px solid;
                border-radius: 4%;
                border-color: rgb(3, 201, 201);
@@ -263,16 +263,23 @@
                font-weight: bold;
                width: 800px;
                margin-top: 70px;
-               margin-left: 360px;
+               margin-left: 380px;
                margin-bottom: 10px;
                text-align: center;
+          }
+          
+          .how {
+               width: 550px;
+               margin-left: 125px;
+               margin-bottom: 20px;
+               margin-right: 60px;
           }
           
           #how {
                font-family: cursive;
                font-size: x-large;
                width: 800px;
-               height: 200px; 
+               height: 470px; 
                border: 3px solid;
                border-radius: 4%;
                border-color: rgb(3, 201, 201);
