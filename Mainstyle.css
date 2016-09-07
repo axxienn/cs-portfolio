@@ -352,4 +352,20 @@
 
  /* hardware ends */
  
+ /* how to */
  
+      h3 {
+          font-size: 40px;
+               width: 70%;
+               text-align: center;
+               margin-top: 4%;
+               margin-left: 15%;
+               margin-bottom: 30px;
+               color: black;
+               background-color: rgb(179, 255, 179);
+               border-color: black;
+               border-style: solid;
+               border-radius: 100px; 
+               padding: 3px;
+               font-family: cursive;
+      }
