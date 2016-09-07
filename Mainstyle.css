@@ -3,7 +3,6 @@
      background-color: rgb(74, 55, 19);
      margin-left: 3px;
      margin-right: 3px;
-
 }
 
 #navbar li {
@@ -11,11 +10,23 @@
      padding: 10px;
      margin-top: 2%;
      margin-bottom: 3%;
+     margin-left: 7px;
      font-size: 20px;
      border: 3px solid;
      border-radius: 7px;
      border-color: white;
      background-color: white;
+}
+
+#navbar li a {
+     text-decoration: none;
+     color: black;
+     font-family: courier new;
+     font-weight: bold;
+}
+
+#navbar li a:hover {
+     color: yellow;
 }
 
 /* about me */
@@ -119,6 +130,16 @@
           margin-left: 70px;
           text-align: center;
           border-color: rgb(74, 55, 19);
+     }
+     
+     #bookmark p a {
+         text-decoration: none;
+         color: blue;
+         font-weight: bold;
+     }
+     
+     #bookmark p a:hover {
+          color: yellow;
      }
 
      h2 {
@@ -241,7 +262,7 @@
                font-family: cursive;
                font-size: x-large;
                width: 800px;
-               height: 250px; 
+               height: 220px; 
                border: 3px solid;
                border-radius: 4%;
                border-color: rgb(3, 201, 201);
@@ -252,7 +273,7 @@
           
           .hd {
                width: 350px;
-               margin-right: 30px;
+               margin-right: 50px;
                float: left;
           }
           
@@ -317,10 +338,18 @@
                height: 200px; 
                padding: 30px;
                margin-left: 360px;
-               margin-bottom: 10px;
-               margin-top: 277px;
+               margin-top: 220px;
           }
- 
+          
+          .sKMM{
+               font-family: cursive;
+               font-size: x-large;
+               font-weight: bold;
+               margin-right: 700px;
+               text-decoration: underline;
+               white-space: pre-line;
+          }
+
  /* hardware ends */
  
  
