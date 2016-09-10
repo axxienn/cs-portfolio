@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title> How To </title>
             <link rel="stylesheet" href="Mainstyle.css" type="text/css" />
-
     </head>
-    <body>
-        
-    <!-- Navbar starts here -->  
+    <body background="http://freephotos.atguru.in/hdphotos/black-and-blue-wallpapers/blue-black-wallpaper-5.jpg">
+
+<!-- Navbar starts here -->  
         
         <ul id="navbar">
             <li> <a href="index.html"> About Me </a></li>
@@ -18,10 +17,91 @@
             <li> <a href=""> Vindinium </a></li>
             <li> <a href="#"> Big Project </a></li>
         </ul>
-        <!-- Navbar ends -->
+<!-- Navbar ends -->
         
     <img id="title"
     src="http://itunesm4a.net/wp-content/uploads/2015/08/Howto.jpg">
+
+<!-- HTML vs. CSS -->
+  
+    <h3> HTML vs. CSS</h3>
+    <button class="accordion"> HTML </button>
+        <div class="panel">
+            <ul>
+                <li class="info"> Stands for the Hypertext Markup Language </li>
+                <li class="info"> It is the coding language for creating and 
+                    structuring a website </li>
+                <li class="info"> It's also where you insert your visible
+                    informations and images onto the webpage </li>
+            </ul>
+        </div>
+    <button class="accordion"> CSS </button>
+        <div class="panel">
+            <ul>
+                <li class="info"> Stands for Cascading Style Sheets </li>
+                <li class="info"> CSS acts like an aid to HTML in which helps
+                    to construct the informations into something more organized 
+                    and compelling </li>
+                <li class="info"> It's responsible for more complex layouts and
+                    designs. 
+                    <ul>
+                        <li> This includes the margin spaces, padding thickness,
+                    and floats </li>
+                    </ul> 
+                </li>
+                <li class="info"> It's able to control and modify multiple pages
+                    at once. 
+                    <ul>
+                        <li> saves time and work</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+<!-- BASCIS -->
+
+    <h3> HTML & CSS Basics </h3>
+    <button class="accordion"> Basics of HTML </button>
+        <div class="panel">
+            <p class="info">
+                A basic HTML format for structuring a page looks like this:
+                <img class="bhtml"
+                src="http://www.havequery.com/resources/images/structure.png">
+            </p>
+            <ul>
+                <li></li>
+            </ul>
+            <img class="bhtml2"
+            src="http://estmary.2020.madeateps.org/wp-content/uploads/sites/32/2016/01/Basic-HTML.png"> 
+        </div>
+    <button class="accordion"> Basics of CSS </button>
+        <div class="panel">
+            <p>  </p>
+        </div>
+
+<!-- menu -->
+    <h3> How to code a menu </h3>
+    <button class="accordion"> HTML Structure </button>
+        <div class="panel">
+            <p>  </p>
+        </div>
+    <button class="accordion"> CSS Structure </button>
+        <div class="panel">
+            <p>  </p>
+        </div>  
+    
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
 
      </body>
 </html>
