@@ -25,6 +25,7 @@
 <!-- HTML vs. CSS -->
   
     <h3> HTML vs. CSS</h3>
+    
     <button class="accordion"> HTML </button>
         <div class="panel">
             <ul>
@@ -33,16 +34,26 @@
                     structuring a website </li>
                 <li class="info"> It's also where you insert your visible
                     informations and images onto the webpage </li>
-            </ul>
+                <li class="info"> For example, a commonly used tag goes like 
+                    this: 
+                    <ul> 
+                        <li> < tagname > content < /tagname > </li>
+                        <li> Most HTML elements contain an opening tag and a
+                        closing tag. The difference between the tags is that a 
+                        closing tag has a slash after the opening angle bracket,
+                        < . </li>
+                    </ul>
+                </li> 
         </div>
+        
     <button class="accordion"> CSS </button>
         <div class="panel">
             <ul>
                 <li class="info"> Stands for Cascading Style Sheets </li>
-                <li class="info"> CSS acts like an aid to HTML in which helps
+                <li class="info"> CSS acts like an aid to HTML. It helps
                     to construct the informations into something more organized 
                     and compelling </li>
-                <li class="info"> It's responsible for more complex layouts and
+                <li class="info"> It's responsible for complex layouts and
                     designs. 
                     <ul>
                         <li> This includes the margin spaces, padding thickness,
@@ -65,18 +76,99 @@
         <div class="panel">
             <p class="info">
                 A basic HTML format for structuring a page looks like this:
-                <img class="bhtml"
-                src="http://www.havequery.com/resources/images/structure.png">
             </p>
-            <ul>
-                <li></li>
+               <img class="bhtml"
+                src="http://help.madcapsoftware.com/flare12/Content/Resources/Images/page_structure_example.png">
+            <ul class="info">
+                <li> <font color=red> Every HTML document
+                must contain < html > and < /html >. It describes the HTML
+                document.
+                </font> </li>
+                <li> <font color=purple> The purpose of a < head >
+                tag is to insert informations about the document.
+                </font> </li>
+                <li> <font color=green> The < title > tag is 
+                what you use to insert a title. </font> </li>
+                <li> <font color="#3385ff"> The < body > 
+                tag is used to contain the visible page contents.
+                </font> </li>
+                <li> <font color=orange> The < h1 >
+                means heading.
+                    <ul>
+                        <li> There is also < h2 >, < h3 >, all the way to 
+                        < h6 >, rating from the least to most important. </li>
+                    </ul>
+                </font> </li>
+                <li> <font color=blue> The paragraph tag, < p >, 
+                indicates a paragraph. </li>
+                </font> </li>
             </ul>
-            <img class="bhtml2"
-            src="http://estmary.2020.madeateps.org/wp-content/uploads/sites/32/2016/01/Basic-HTML.png"> 
         </div>
-    <button class="accordion"> Basics of CSS </button>
+        
+    <button class="accordion"> Basics of CSS (External Sytle Sheet) </button>
         <div class="panel">
-            <p>  </p>
+            <p class="info"> A basic CSS format looks like this: </p>
+            <img class="bhtml2"
+                src="http://www.wwp.northeastern.edu/outreach/seminars/_utils/gfx/css_ruleset_06.png">
+            <ul class="info">
+                <li> <font color="#800000"> The h1 is known as the selector. It 
+                indicates that you are modifying specifically heading 1. 
+                </font> 
+                    <ul> <font color="#666666">
+                        <li> Then you would use an opening and closing 
+                        braces, { }, to contain the modifications. 
+                        The braces can also be identified as rulesets. </li>
+                        </font>
+                    </ul>
+                    <ul> <font color="#666666">
+                        <li> Everything inside of a ruleset is called a 
+                        declaration. A ruleset can contain multiple declarations
+                        and every declaration consists of a property and 
+                        value. </li> </font>
+                    </ul>
+                </li>
+                <li> To put the content in the center, insert
+                <span style="color:green"> text-align: </span> 
+                <span style="color: blue"> center; </span>
+                    <ul>
+                        <li> <font color="green"> In coding, the text-align
+                        is known as a property. The function of a property 
+                        is to specify your command. This includes 
+                        changing the text alignment, font color, the space 
+                        between one another, and so on.</font> </li>
+                        <ul>
+                            <li> <font color="#666666"> After you've
+                            inserted a property, it must be followed by a 
+                            colon. A colon lets the program know that it is 
+                            the end of a property.
+                            </font></li>
+                        </ul>
+                    </ul> 
+                    <ul>
+                        <li> <font color="blue"> Every property follows
+                        by a value. The value is used to help the property 
+                        to identify further that this is the certain
+                        change you want to make. In this case, the 
+                        instruction- center -would be the value.
+                        </font> </li>
+                        <ul>
+                            <li> <font color="#666666"> After every value,
+                            a semi-colon is necessary to conclude the
+                            declaration. </font> </li>
+                        </ul>
+                    </ul>
+                </li>
+                <li>
+                    To change the font into bold, insert 
+                    <span style="color:green"> font-weight: </span>
+                    <span style="color: blue"> bold; </span>
+                </li>
+                <li>
+                    To change the font-color into blue, insert 
+                    <span style="color:green"> color: </span>
+                    <span style="color: blue"> blue; </span>
+                </li>
+            </ul>
         </div>
 
 <!-- menu -->
@@ -89,8 +181,7 @@
         <div class="panel">
             <p>  </p>
         </div>  
-    
-    
+
     <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
