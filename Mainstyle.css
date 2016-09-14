@@ -348,9 +348,9 @@
                white-space: pre-line;
           }
 
- /* hardware ends */
+/* hardware ends */
  
- /* how to */
+/* how to */
      
      body {
           background-repeat: no-repeat;
@@ -392,7 +392,7 @@
           font-size: large;
           transition: 0.4s;
           margin-left: 50px;
-          margin-bottom: 3px;
+          margin-bottom: px;
      }
       
      .accordion.active, .accordion:hover {
@@ -431,8 +431,10 @@
           font-size: larger;
           padding: 5px;
           margin-left: 100px;
+          margin-right: 40px;
      }
      
+     /* basics */
      .bhtml {
           width: 400px;
           margin-left: 150px;
@@ -448,5 +450,18 @@
           border-radius: 20px;
           padding: 10px;
      }
+
+     /* menu */
+     .menupic {
+          margin-left: 200px;
+          border: 2px solid;
+          border-radius: 20px;
+          padding: 10px;
+     }
      
+     .expic {
+          margin-left: 230px;
+          width: 400px;
+     }
      
+/* how to ends */
