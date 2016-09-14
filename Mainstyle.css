@@ -170,16 +170,15 @@
                font-family: cursive;
                font-size: x-large;
                width: 800px;
-               height: 280px; 
+               height: 550px; 
                border: 3px solid;
                border-radius: 4%;
                border-color: rgb(3, 201, 201);
                padding: 30px;
                margin-left: 360px;
-               margin-bottom: 10px;
                margin-top: 20px;
           }
-          
+     
           .motherboard {
                float: right;
                width: 350px; 
@@ -392,7 +391,7 @@
           font-size: large;
           transition: 0.4s;
           margin-left: 50px;
-          margin-bottom: px;
+          margin-bottom: 3px;
      }
       
      .accordion.active, .accordion:hover {
