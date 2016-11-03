@@ -540,7 +540,7 @@
      #displaytext {
           font-size: 30px;
           font-family: cursive;
-          margin-top: 30px;
+          margin-top: 25px;
           margin-left: 300px;
      }
      
@@ -550,6 +550,7 @@
           text-align: center;
           width: 100%;
           padding: 0px;
+          margin-top: -2px;
      }
      
    
