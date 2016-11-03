@@ -475,13 +475,83 @@
           margin-left: 20%;
           margin-bottom: 30px;
           color: black;
-          background-color: rgb(230, 255, 230);
+          background-color: white;
           border-color: black;
           border-style: solid;
           border-radius: 100px; 
           padding: 3px;
           font-family: cursive; 
-          }
-
+     }
+     
+     #input {
+          width: 300px;
+          height: 100px;
+          margin-left: 250px;
+          font-size: 80px;
+          font-family: cursive;
+          padding: 15px;
+          border-color: gray;
+          border-radius: 10px;
+          border-width: 7px;
+          border-style: double;
+          color: gray;
+     }
+     
+     #input2 {
+          margin-top: 30px;
+          width: 300px;
+          height: 100px;
+          margin-left: 10px;
+          font-size: 80px;
+          font-family: cursive;
+          padding: 15px;
+          border-color: gray;
+          border-radius: 10px;
+          border-width: 7px;
+          border-style: double;
+          color: gray;
+     }
+     
+     #operator {
+          margin-left: 10px;
+          width: 100px;
+          height: 70px;
+          font-size: 45px;
+          font-family: cursive;
+          border-color: gray;
+          border-radius: 20px;
+          border-width: 3px;
+          background-color: white;
+     }
+     
+     #calculate {
+          margin-top: 50px;
+          margin-left: 10px;
+          height: 70px;
+          width: 60px;
+          font-size: 50px;
+          font-family: cursive;
+          border-color: gray;
+          border-radius: 20px;
+          border-width: 3px;
+          background-color: white;
+     }
+     
+     #displaytext {
+          font-size: 30px;
+          font-family: cursive;
+          margin-top: 30px;
+          margin-left: 300px;
+     }
+     
+     #answer {
+          font-size: 60px;
+          font-family: cursive;
+          text-align: center;
+          width: 100%;
+          padding: 0px;
+     }
+     
+   
 /* calculator ends */
 
