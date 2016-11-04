@@ -550,9 +550,27 @@
           text-align: center;
           width: 100%;
           padding: 0px;
-          margin-top: -2px;
+          margin-top: -25px;
      }
      
    
 /* calculator ends */
+
+/* to do */
+
+     h5 {
+          font-size: 40px;
+          width: 60%;
+          text-align: center;
+          margin-top: 4%;
+          margin-left: 20%;
+          margin-bottom: 30px;
+          color: black;
+          background-color: rgb(255, 163, 86);
+          border-color: black;
+          border-style: solid;
+          border-radius: 100px; 
+          padding: 3px;
+          font-family: cursive; 
+     }
 
