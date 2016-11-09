@@ -10,15 +10,17 @@ addbutton.addEventListener("click", function() {
     var task = "<div>" + textbox.value + "<div>" + "<br>";
     tasks.innerHTML = tasks.innerHTML + task; 
     
+    
 });
+
 
 //removing to do items
 tasks.addEventListener("click", function(evt){
    
    var remove = evt.target;
    remove.parentNode.removeChild(remove);
-  
+
 });
 
 
-
+// highlight to do items

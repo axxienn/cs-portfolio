@@ -5,7 +5,7 @@
              <link rel="stylesheet" href="Mainstyle.css" type="text/css" />
     </head>
 
-    <body>
+    <body background="https://w-dog.net/wallpapers/15/16/546311276874962/textures-background-paper-sheet-crumpled-white.jpg">
         
          <!-- Navbar starts here -->  
         
@@ -15,25 +15,32 @@
             <li> <a href="howto.html"> How To </a> </li>
             <li> <a href="calc.html"> Calculator </a></li>
             <li> <a href="todo.html"> To Do List </a></li>
-            <li> <a href=""> Vindinium </a></li>
+            <li> <a href="#"> Vindinium </a></li>
             <li> <a href="#"> Big Project </a></li>
         </ul>
         <!-- Navbar ends -->
         
-        <h5> To do List </h5>
+        <h5> To Do List </h5>
         
-        <input id="textbox" type="text">
-        
-        <select id="customize">
-            <option value="highlight"> Highlight</option> 
+         <select id=customize>
+             <option> none </option>
+            <option value="highlight"> Highlight </option>
             <option value="bold"> Bold </option>
-            <option value="red"> Red </option>
-        </select>
+            <option value="red"> red </option>
+            
+        <input type="text" id="textbox" value="I will...">
+
+    <input type="button" value ="add" id="addbutton"> 
+    
+    <img id="todoPic"
+    src="http://pocketpew.com/wp-content/uploads/2015/05/checklist-vector-flat.png">
         
-        <input type="button" id="addbutton" value="Add">
+        <div id="tasks"> 
         
-        <div id=tasks> </div>
+        </div>
         
+
+
 <script type="text/javascript" src="todo.js"> </script>    
         
     </body>
