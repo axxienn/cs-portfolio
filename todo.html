@@ -22,11 +22,34 @@
         
         <h5> To Do List </h5>
         
-         <select id=customize>
-             <option> none </option>
-            <option value="highlight"> Highlight </option>
-            <option value="bold"> Bold </option>
-            <option value="red"> red </option>
+<!-- labels of the options -->    
+
+        <div id="highlightLabel"> highlight: </div>
+        <div id="colorLabel"> font color: </div>
+        
+<!-- selectors -->
+        
+        <select id="changeStyle">
+            <option> None </option>
+            <option value="rgb(252, 255, 102)"> Yellow </option>
+            <option value="rgb(255, 163, 163)"> Red </option>
+            <option value="rgb(255, 204, 102)"> Orange </option>
+            <option value="rgb(171, 255, 147)"> Green </option>
+            <option value="rgb(207, 252, 246)"> Blue </option>
+        </select>
+        
+        <select id="customize">
+            <option> Default </option>
+            <option value="white"> White </option>
+            <option value="red"> Red </option>
+            <option value="orange"> Orange </option>
+            <option value="green"> Green </option>
+            <option value="blue"> Blue </option>
+            <option value="purple"> Purple </option>
+        </select>
+        
+            
+<!-- input box & add button -->
             
         <input type="text" id="textbox" value="I will...">
 
@@ -35,12 +58,8 @@
     <img id="todoPic"
     src="http://pocketpew.com/wp-content/uploads/2015/05/checklist-vector-flat.png">
         
-        <div id="tasks"> 
+        <div id="tasks" style="cursor:pointer">  </div>
         
-        </div>
-        
-
-
 <script type="text/javascript" src="todo.js"> </script>    
         
     </body>

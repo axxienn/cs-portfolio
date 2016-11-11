@@ -6,14 +6,6 @@ var button = document.getElementById("calculate");
 var ans = document.getElementById("answer");
 var answer;
 
-
-
-
-
-
-
-
-
 //function of the calculator start
 button.addEventListener("click",function (){
     var number = input.value;
