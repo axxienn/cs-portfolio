@@ -12,10 +12,18 @@
         <ul id="navbar">
             <li> <a href="index.html"> About Me </a></li>
             <li> <a href="hardware.html"> Hardware </a></li>
-            <li> <a href="howto.html"> How To </a> </li>
             <li> <a href="calc.html"> Calculator </a></li>
             <li> <a href="todo.html"> To Do List </a></li>
-            <li> <a href=""> Vindinium </a></li>
+            
+                <li class="howtoDD">
+                    <a href="#" class="howtobtn"> How To </a>
+                  <div class="howtoContent"> 
+                    <a href="howto.html"> code a menu  </a>
+                    <a href="howtocalc.html"> code a calculator </a>
+                  </div>
+                </li>
+                
+            <li> <a href="#"> Vindinium </a></li>
             <li> <a href="#"> Big Project </a></li>
         </ul>
         <!-- Navbar ends -->
@@ -26,7 +34,7 @@
 
       <input type="number" id="input"> 
     
-        <select id=operator>
+        <select id="operator">
             <option value="+"> + </option>
             <option value="-"> - </option>
             <option value="*"> x </option>
@@ -37,7 +45,7 @@
             <option value="cos"> cos </option> 
             <option value="tan"> tan </option>
         </select>
-
+        
       <input type="number" id="input2">
       
     <button type="button" value="calculate" id="calculate"> = </button>

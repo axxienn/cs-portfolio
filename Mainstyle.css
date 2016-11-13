@@ -27,6 +27,35 @@
      color: yellow;
 }
 
+/* how to page dropdown */
+
+     li a, .howtobtn {
+         display: inline-block;
+     }
+     
+     .howtoDD {
+         display: inline-block;
+     }
+     
+     .howtoContent {
+         display: none;
+         position: absolute;
+         background-color: white;
+         padding: 15px;
+         border-radius: 10px;
+     }
+     
+     .howtoContent a {
+         display: block;
+         text-align: center;
+     }
+     
+     .howtoDD:hover .howtoContent {
+         display: block;
+     }
+
+
+
 /* about me */
 
      /* pt.1 */
@@ -415,7 +444,6 @@
           max-height: 0;
           overflow: hidden;
           transition: 0.6s ease-in-out;
-          opacity: 0;
      }
      
      .panel.show {
@@ -428,9 +456,10 @@
      .info {
           font-family: cursive;
           font-size: larger;
-          padding: 5px;
+          padding: 8px;
           margin-left: 100px;
           margin-right: 40px;
+          margin-bottom: px;
      }
      
      /* basics */
@@ -655,4 +684,51 @@
           width: 800px;
           
      }
+
+/* to do ends*/
+
+/* how to 2 starts*/
+
+     h6 {
+          text-align: center;
+          width: 230px;
+          color: black;
+          font-family: cursive;
+          font-size: 20px;
+          margin-top: -10px;
+          margin-left: 553px;
+          border-color: black;
+          border-radius: 10px;
+          padding: 5px;
+          border-style: solid;
+          background-color: rgb(255, 206, 231);
+     }
+
      
+     
+     
+
+
+
+
+
+
+
+
+
+/* how to 2 ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
