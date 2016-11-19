@@ -39,14 +39,15 @@
     
     <!-- a. -->
     
-    <button class="accordion"> a. Structure </button>
+    <button class="accordioncalc"> a. Structure </button>
     
         <div class="panel">
+            
             <ul>
                 <li class="info"> Set up the basic HTML format for 
                 structuring a page: 
         
-                <img class="bhtml"
+                <img class="htcalcpic"
                 src="http://help.madcapsoftware.com/flare12/Content/Resources/Images/page_structure_example.png"> 
                 
                 <ul> 
@@ -54,50 +55,23 @@
                     of the <span> <a href="howto.html"> How To 
                     Code a Menu </a> </span> page for 
                     clarification </li>
-                    
         </div>
         
     <!-- b. -->
     
-    <button class="accordion"> b. Inputs of the Calculator </button>
+    <button class="accordioncalc"> b. Inputs of the Calculator </button>
     
         <div class="panel">
             
             <ul>
                 <li class="info"> Then construct two input boxes 
-                for the user to insert their numbers for the 
-                calculator. Here is my HTML structure: 
+                for the user to insert numbers for the 
+                calculator. Here is my structure: 
                 
-                <img class="menupic"
-                src="images/b.png">
-                
-                <ul> 
-                <li> The input tag is used for an input 
-                    space where the user can enter data </li>
-                    <li> Specifying the type of the input 
-                    limits the user to only insert numbers </li>
-                    <li> Labeling the ID as "input" and 
-                    “input2” will help CSS to identify that
-                    this is the area you want to modify </li>
-        </div>
-        
-    <!-- c. -->
-        
-    <button class="accordion"> c. Operations of the Calculator </button>
-    
-        <div class="panel">
-            
-            <ul>
-                <li class="info"> After creating two input areas for 
-    the calculator, code the calculator’s operations in between. 
-    The operations that I have included are addition, subtraction, 
-    multiplication, division, exponent, square root, sine, cosine, 
-    and tangent. My codes look like this:
-                
-                <img class="menupic"
+                <img class="htcalcpic"
                 src="images/c.png">
                 
-                <ul> 
+            <ul> 
                 <li> Firstly, a < select > tag  is used to for 
                     a dropdown list. </li>
                 <li> The options that nest inside of the select 
@@ -110,13 +84,53 @@
                 <li> Adding the value attribute works by 
                 sending the information to the server when 
                 submitted </li>
+                <li> This is what I have created so far: </li>
+                
+                <img class="htcalcpic"
+                src="images/c1.png">
+                
+        </div>
+        
+    <!-- c. -->
+        
+    <button class="accordioncalc"> c. Operations of the Calculator </button>
+    
+        <div class="panel">
+            
+            <ul>
+                <li class="info"> After creating two input areas for 
+    the calculator, code the calculator’s operations in between. 
+    The operations that I have included are addition, subtraction, 
+    multiplication, division, exponent, square root, sine, cosine, 
+    and tangent. My codes look like this:
+                
+                <img class="htcalcpic"
+                src="images/c.png">
+                
+            <ul> 
+                <li> Firstly, a < select > tag  is used to for 
+                    a dropdown list. </li>
+                <li> The options that nest inside of the select 
+                    tag are used to list out all the options of the 
+                    math operation list </li>
+                        <ul>
+                            <li>In this case, It would be the signs 
+                            of all of my chosen operations</li>
+                        </ul>
+                <li> Adding the value attribute works by 
+                sending the information to the server when 
+                submitted </li>
+                <li> This is what I have created so far: </li>
+                
+                <img class="htcalcpic"
+                src="images/c1.png">
                                             
                     
         </div>
         
     <!-- d. -->
         
-    <button class="accordion"> d. The Calculate Button & Answer Display </button>
+    <button class="accordioncalc"> d. The Calculate Button & Answer Display </button>
     
         <div class="panel">
             
@@ -126,7 +140,7 @@
                 function along with an area for answer display. 
                 These are my codes:
                 
-                <img class="menupic"
+                <img class="htcalcpic"
                 src="images/d.png">
                 
                 <ul>
@@ -138,11 +152,16 @@
                 the area below would display the answer </li>
                 <li> Where the answer is going to display is the 
                 < div > tag’s job to display it </li>
+                <li> Including everything from previous steps, 
+                this is how it’ll turn out: </li>
+                
+                <img class="htcalcpic"
+                src="images/d1.png">
         </div>
         
     <!-- e. -->
         
-    <button class="accordion"> c. Directing to Javascript </button>
+    <button class="accordioncalc"> e. Directing to Javascript </button>
     
         <div class="panel">
             
@@ -153,17 +172,22 @@
                 order to make the calculator work. Mine looks like 
                 this:
                 
-                <img class="menupic"
+                <img class="htcalcpic"
                 src="images/e.png">
                 
             <ul>
-                <li> The < button > tag is what makes a box clickable </li> 
-                <li> The src attribute specifies the URL of the 
-                external file </li>
+                <li>  A < script > tag is used to define javascript 
+                or directs the HTML to an external file through src </li> 
+                <li> The src attribute directs this HTML to an 
+                external file by specifying the URL of the external 
+                file </li>
                 <ul>
                     <li> The external file in this case would be 
                     “calc.js” </li>
                 </ul> 
+                <li> If you don’t want to create an external file 
+                for javascript, you can also insert a < script > 
+                tag on the bottom of HTML page for the same result </li>
             </ul>
         </div>
         
@@ -173,7 +197,7 @@
     
     <!-- a. -->
     
-    <button class="accordion"> a. Structure </button>
+    <button class="accordioncalc"> a. Structure </button>
     
         <div class="panel">
             <ul>
@@ -197,7 +221,7 @@
     
     <!-- a. -->
     
-    <button class="accordion"> a. Structure </button>
+    <button class="accordioncalc"> a. Structure </button>
     
         <div class="panel">
             <ul>
@@ -220,7 +244,7 @@
     
        
 <script>
-    var acc = document.getElementsByClassName("accordion");
+    var acc = document.getElementsByClassName("accordioncalc");
     var i;
 
     for (i = 0; i < acc.length; i++) {
