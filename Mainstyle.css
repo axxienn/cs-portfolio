@@ -448,7 +448,7 @@
      
      .panel.show {
           opacity: 1;
-          max-height: 1000px;
+          max-height: 2000px;
           margin-left: 90px;
           width: 1140px;
      }
@@ -703,6 +703,7 @@
           border-style: solid;
           background-color: rgb(255, 206, 231);
      }
+     
      .htcalcpic {
           margin-top: 20px;
           margin-bottom: 10px;
@@ -724,7 +725,7 @@
           outline: none;
           font-family: cursive;
           font-size: large;
-          transition: 0.4s;
+          transition: 0.3s;
           margin-left: 50px;
           margin-bottom: 3px;
      }
@@ -737,21 +738,12 @@
           content: '\02795';
           font-size: 13px;
           float: right;
-          margin-left: 5px;
      }
      
      .accordioncalc.active:after {
           content: "\2796";
      }
      
-
-
-
-
-
-
-
-
 
 /* how to 2 ends */
 

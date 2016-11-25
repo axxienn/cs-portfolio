@@ -43,18 +43,16 @@
     
         <div class="panel">
             
-            <ul>
-                <li class="info"> Set up the basic HTML format for 
-                structuring a page: 
-        
-                <img class="htcalcpic"
+            <p class="info"> Set up the basic HTML format for 
+            structuring a page </p>
+                
+            <img class="htcalcpic"
                 src="http://help.madcapsoftware.com/flare12/Content/Resources/Images/page_structure_example.png"> 
                 
-                <ul> 
-                    <li> Refer back to the HTML and CSS section 
-                    of the <span> <a href="howto.html"> How To 
-                    Code a Menu </a> </span> page for 
-                    clarification </li>
+            <ul class="info">
+                <li> Refer back to the HTML and CSS 
+                section of the <span> <a href="howto.html"> How To 
+                Code a Menu </a> </span> page for clarification </li>
         </div>
         
     <!-- b. -->
@@ -63,31 +61,26 @@
     
         <div class="panel">
             
-            <ul>
-                <li class="info"> Then construct two input boxes 
+            <p class="info"> Then construct two input boxes 
                 for the user to insert numbers for the 
-                calculator. Here is my structure: 
+                calculator. Here is my structure: </p>
+            
+            <img class="htcalcpic"
+                src="images/b.png">
+            
+            <ul class="info">
+                
+                <li> The input tag is used for an input space where 
+                the user can enter data </li>
+                <li> Specifying the type of the input limits the 
+                user to insert numbers only </li>
+                <li> Labeling the ID as "input" and "input2" 
+                will help CSS to identify that this is the area you 
+                want to modify. </li>
+                <li> Essentially, this is what I have created: </li>
                 
                 <img class="htcalcpic"
-                src="images/c.png">
-                
-            <ul> 
-                <li> Firstly, a < select > tag  is used to for 
-                    a dropdown list. </li>
-                <li> The options that nest inside of the select 
-                    tag are used to list out all the options of the 
-                    math operation list </li>
-                        <ul>
-                            <li>In this case, It would be the signs 
-                            of all of my chosen operations</li>
-                        </ul>
-                <li> Adding the value attribute works by 
-                sending the information to the server when 
-                submitted </li>
-                <li> This is what I have created so far: </li>
-                
-                <img class="htcalcpic"
-                src="images/c1.png">
+                src="images/b1.png">
                 
         </div>
         
@@ -97,24 +90,25 @@
     
         <div class="panel">
             
-            <ul>
-                <li class="info"> After creating two input areas for 
-    the calculator, code the calculator’s operations in between. 
-    The operations that I have included are addition, subtraction, 
-    multiplication, division, exponent, square root, sine, cosine, 
-    and tangent. My codes look like this:
-                
-                <img class="htcalcpic"
+            <p class="info"> After creating two input areas for 
+            the calculator, code the calculator's operations in 
+            between. The operations that I have included are 
+            addition, subtraction, multiplication, division, 
+            exponent, square root, sine, cosine, and tangent. My 
+            codes look like this: </p>
+            
+            <img class="htcalcpic"
                 src="images/c.png">
-                
-            <ul> 
-                <li> Firstly, a < select > tag  is used to for 
+        
+            <ul class="info">
+                 
+                <li> A < select > tag  is used to for 
                     a dropdown list. </li>
                 <li> The options that nest inside of the select 
                     tag are used to list out all the options of the 
                     math operation list </li>
                         <ul>
-                            <li>In this case, It would be the signs 
+                            <li>In this case, it would be the signs 
                             of all of my chosen operations</li>
                         </ul>
                 <li> Adding the value attribute works by 
@@ -134,26 +128,27 @@
     
         <div class="panel">
             
-            <ul>
-                <li class="info"> To complete the calculator, 
+            <p class="info"> To complete the calculator, 
                 you need to have a calculate button to run the 
-                function along with an area for answer display. 
-                These are my codes:
+                function, along with an area for answer display. 
+                These are my codes: </p>
                 
-                <img class="htcalcpic"
+            <img class="htcalcpic"
                 src="images/d.png">
+            
                 
-                <ul>
+            <ul class="info">
+                
                 <li> The < button > tag is what makes a box clickable </li>
                 <ul>
-                    <li> I used it for a calculate button or “=” </li>
+                    <li> I used it for a calculate button or "=" </li>
                 </ul>
                 <li> Then I added a paragraph tag to specify that 
                 the area below would display the answer </li>
                 <li> Where the answer is going to display is the 
-                < div > tag’s job to display it </li>
+                < div > tag's job to display it </li>
                 <li> Including everything from previous steps, 
-                this is how it’ll turn out: </li>
+                this is how it will turn out: </li>
                 
                 <img class="htcalcpic"
                 src="images/d1.png">
@@ -165,17 +160,17 @@
     
         <div class="panel">
             
-            <ul>
-                <li class="info"> However, HTML can only do so 
+                <p class="info"> However, HTML can only do so 
                 much in terms of constructing the page, that is why 
                 we need to link this HTML tab to a Javascript in 
                 order to make the calculator work. Mine looks like 
-                this:
+                this: </p>
                 
                 <img class="htcalcpic"
                 src="images/e.png">
                 
-            <ul>
+            <ul class="info">
+                
                 <li>  A < script > tag is used to define javascript 
                 or directs the HTML to an external file through src </li> 
                 <li> The src attribute directs this HTML to an 
@@ -183,37 +178,195 @@
                 file </li>
                 <ul>
                     <li> The external file in this case would be 
-                    “calc.js” </li>
+                    "calc.js" because that is what I named it </li>
                 </ul> 
-                <li> If you don’t want to create an external file 
+                <li> If you do not want to create an external file 
                 for javascript, you can also insert a < script > 
                 tag on the bottom of HTML page for the same result </li>
             </ul>
         </div>
+    
+    
+    
         
 <!-- Step 2: Javascript -->
   
     <h3> Step 2: Javascript </h3>
     
+    
     <!-- a. -->
     
-    <button class="accordioncalc"> a. Structure </button>
+    <button class="accordioncalc"> a. Gather Elements from HTML </button>
     
         <div class="panel">
-            <ul>
-                <li class="info"> Set up the basic HTML format for 
-                structuring a page: 
-        
-                <img class="bhtml"
-                src="http://help.madcapsoftware.com/flare12/Content/Resources/Images/page_structure_example.png"> 
+            
+            <p class="info"> To start off a javascript(JS) file, 
+            gather elements from HTML. Here is how I did mine: </p>
                 
+            <img class="htcalcpic"
+                src="images/jsA.png">
+                
+            <ul class="info">
+                <li> The keyword var, or variable, is used for 
+                storing data values in JS </li>
+                <li> Every var must be followed by an identifier </li>
+                <ul>
+                    <li> The identifiers from above would be 
+                    "input", "select", "input2", "button", "ans", 
+                    and "answer" </li>
+                    <li> An identifier should be be unique to 
+                    prevent different variables operating the same 
+                    function </li>
+                </ul>
+                <li> The equal sign (=) in JS is known as an 
+                assignment operator. This functions by assigning a 
+                value to the variable. </li>
                 <ul> 
-                    <li> Refer back to the HTML and CSS section 
-                    of the <span> <a href="howto.html"> How To 
-                    Code a Menu </a> </span> page for 
-                    clarification </li>
-                    
+                    <li>Take the first variable from above for 
+                        example, document.getElementById("input") 
+                        is the value that is assigned to the var 
+                        input </li>
+                </ul>
+                <li> document.getElementById(" ") is used when 
+                you want to get information from another file </li>
+                <ul> 
+                    <li> The Document Object Model (DOM) is a 
+                    common method to control the structure as well 
+                    as style of a HTML page, and getting an element 
+                    by ID is just one way to do it </li>
+                    <li> camelCase is a JS style of capitalizing 
+                    the first letter of every word, except for the 
+                    first word. The purpose of camelCase is to 
+                    allow readers to recognize long 
+                    unspaced words easier </li>
+                </ul>
         </div>
+    
+    <!-- b. -->
+    
+    <button class="accordioncalc"> b. Input Possibilities </button>
+    
+        <div class="panel">
+            
+            <p class="info"> After gathering elements from HTML, 
+            start coding the calculate button and possibilities of 
+            the input boxes as well as the available operations. 
+            These are my codes: </p>
+                
+            <img class="htcalcpic"
+                src="images/jsB.png">
+                
+            <ul class="info">
+                <li> addEventListener() is a method to inform the 
+                program to operate its specific function when the 
+                first parameter is activated </li>
+                
+                <ul>
+                    <li> The period between "button" and 
+                    "addEventListener" can be seen or read as 
+                    "addEventListener of the button" </li>
+                    <ul>
+                        <li> Since the HTML functions were already 
+                        obtained from the previous step, the var 
+                        button informs the program that whatever 
+                        action taken is performed on the calculate 
+                        button </li>
+                    </ul>
+                </ul>
+            
+                <li> The first parameter is the type of event, 
+                which is "click" in this case. In other words, the 
+                calculate button would do something when the user 
+                clicks it. </li>
+                <li> The second parameter determines its 
+                function when the first parameter is activated, 
+                which is "function" in this case. So when the user
+                clicks the calculate button, it would function. </li>
+                <li> Then I created variables for the input boxes and 
+                operations of the calculator </li>
+                <ul>
+                    <li> Ex: For the first input box, I created 
+                    "var number" and assigned it to "input.value" </li>
+                    <ul>
+                        <li> The function of value property 
+                        (.value) here is to read the value a user 
+                        inserts in the first input area </li>
+                        <li> The first input area is identified as 
+                        "input", an identifier created in the 
+                        beginning </li>
+                        <li> Essentially, the program detects the 
+                        inserted value in the first input box and 
+                        all this is going to be recognized as var 
+                        number in the following </li>
+                    </ul>
+                </ul>
+                
+            </ul>
+        </div>
+    
+    <!-- c. -->
+    
+    <button class="accordioncalc"> c. Calculator Operations </button>
+    
+        <div class="panel">
+            
+            <p class="info"> Finally, add if statements right 
+            below the variables so that the user can calculate 
+            with any selected operations. This is one of my nine 
+            math operations: </p>
+                
+            <img class="htcalcpic"
+                src="images/jsC.png">
+                
+            <ul class="info">
+                <li> The if statement is used when there are 
+                multiple options of function to choose from </li>
+                <li> One of the if statements that I have included 
+                is when the operator is equal to (===) the value of 
+                "+" </li>
+                <ul>
+                    <li> The operator is a variable created from 
+                    the previous step and it refers to the calculator 
+                    operations </li>
+                </ul>
+                <li> Then I created a var for the answer </li>
+                <ul>
+                    <li> The answer should be the first input box 
+                    (number) plus the second input box (number2) </li>
+                    <li> However, this would provide you a false result 
+                    of 22 if you insert a 2 in the first box and 
+                    another 2 in the second box </li>
+                    <li> Consequently, add parseInt() to the input 
+                    boxes to return the inserted number into an 
+                    integer. This way, the sum of this scenario 
+                    would be 4. </li>
+                </ul>
+                <li> To display the answer, I added ans.innerHTML 
+                to transfer these contents. With an equal sign, I 
+                assigned it to the variable answer, which is the 
+                statement mentioned above </li>
+                <ul>
+                    <li> The variable ans right before the 
+                    innerHTML refers to the display area back on 
+                    the HTML file </li>
+                </ul>
+                <li> With similar procedures as the operation of 
+                addition as well as a few variations, you can 
+                form different math operations </li>
+                <ul>
+                    <li> P.S. I used <span> 
+                    <a href="http://www.w3schools.com/jsref/jsref_obj_math.asp"> 
+                    W3Schools </a> </span> for guides on 
+                    additional math operations </li>
+                    <li> Nevertheless, these are my other if 
+                    statements: </li>
+                    
+                    <img class="htcalcpic"
+                    src="images/jsC2.png">
+                    
+                </ul>
+        </div>
+    
         
 <!-- Step 3: CSS -->
   
@@ -221,25 +374,58 @@
     
     <!-- a. -->
     
-    <button class="accordioncalc"> a. Structure </button>
+    <button class="accordioncalc"> a. CSS </button>
     
         <div class="panel">
-            <ul>
-                <li class="info"> Set up the basic HTML format for 
-                structuring a page: 
-        
-                <img class="bhtml"
-                src="http://help.madcapsoftware.com/flare12/Content/Resources/Images/page_structure_example.png"> 
+            
+            <p class="info"> Adding CSS is very straightforward. 
+            A basic CSS format looks like this: </p>
                 
-                <ul> 
-                    <li> Refer back to the HTML and CSS section 
-                    of the <span> <a href="howto.html"> How To 
-                    Code a Menu </a> </span> page for 
-                    clarification </li>
-                    
+            <img class="bhtml2"
+                src="http://www.wwp.northeastern.edu/outreach/seminars/_utils/gfx/css_ruleset_06.png">
+                
+            <ul class="info">
+                <li> Refer back to the Basics of CSS and CSS 
+                Structure of the <span> <a href="howto.html"> 
+                How To Code a Menu </a> </span> page for for basic 
+                informations </li>
+                <li> For reference, B to D are the CSS codes that I 
+                have created for my <span> <a href="calc.html"> 
+                calculator page </a> </span> </li>
         </div>
+        
+    <!-- b. -->
     
+    <button class="accordioncalc"> b. Input Boxes </button>
     
+        <div class="panel">
+            
+            <img class="htcalcpic"
+            src="images/cssB.png">
+            
+        </div>
+        
+    <!-- c. -->
+    
+    <button class="accordioncalc"> c. Math Operations & Calculate Button </button>
+    
+        <div class="panel">
+            
+            <img class="htcalcpic"
+            src="images/cssC.png">
+            
+        </div>
+        
+    <!-- d. -->
+    
+    <button class="accordioncalc"> d. The Word Answer & Answer Display Area </button>
+    
+        <div class="panel">
+            
+            <img class="htcalcpic"
+            src="images/cssD.png">
+            
+        </div>
     
     
        
