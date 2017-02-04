@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> How To </title>
+            <link rel="stylesheet" href="Mainstyle.css" type="text/css" />
+    </head>
+    <body id="howtocalcIMG"
+    background="http://www.milesgames.com/wp-content/uploads/2014/01/SuperMarioBrosWallpaper1-e1446748472864.png">
+
+        <!-- Navbar starts here -->  
+        
+        <ul id="navbar">
+            <li> <a href="index.html"> About Me </a></li>
+            <li> <a href="hardware.html"> Hardware </a></li>
+            <li> <a href="calc.html"> Calculator </a></li>
+            <li> <a href="todo.html"> To Do List </a></li>
+            
+                <li class="howtoDD">
+                    <a href="#" class="howtobtn"> How To </a>
+                  <div class="howtoContent"> 
+                    <a href="howto.html"> code a menu  </a>
+                    <a href="howtocalc.html"> code a calculator </a>
+                  </div>
+                </li>
+                
+            <li> <a href="vind.html"> Vindinium </a></li>
+            <li> <a href="#"> Big Project </a></li>
+        </ul>
+        
+        <!-- Navbar ends -->    
+      
+        
+<!-- What is Vindinium -->
+  
+    <h3 id="blackHeading"> What is Vindinium </h3>
+    
+
+    <button class="accordionvind"> Vindinium Explanantion </button>
+    
+        <div class="panel">
+                
+            <ul class="info">
+                <li> Vindinium is a programing game where players need 
+                to create their own codes in order to participate in 
+                the game as robots. The objective of this game is to 
+                collect the greatest amount of gold. However, enemy 
+                bots can also attack your bot and steal your mines, vice 
+                versa. The abilities of your bot is dependent on the 
+                orders you give through coding so the better your codes 
+                are planned out, the stronger your bot will be. </li>
+                
+            <img class="htcalcpic"
+            src="http://stratosprovatopoulos.com/wp-content/uploads/2014/02/screenshot.png"> 
+
+        </div>
+        
+    
+    
+<!-- entire bot code  -->
+  
+    <h3 id="blackHeading"> The Entire Code to My Bot </h3>
+    
+
+    <button class="accordionvind"> Bot Codes </button>
+    
+        <div class="panel">
+            
+            <code>
+                <pre>
+                    
+var Bot = require('bot');
+var PF = require('pathfinding');
+// var bot = new Bot('y8k85emg', 'training', 'http://vindinium.org'); //Put your bot's code here and change training to Arena when you want to fight others.
+var bot = new Bot('pvx74ns2', 'arena', 'http://52.39.33.197:9000'); //Put your bot's code here and change training to Arena when you want to fight others.
+var goDir;
+var Promise = require('bluebird');
+Bot.prototype.botBrain = function() {
+    return new Promise(function(resolve, reject) {
+        _this = bot;
+        //////* Write your bot below Here *//////
+        //////* Set `myDir` in the direction you want to go and then bot.goDir is set to myDir at the bottom *////////
+
+        /*                                      *
+         * This Code is global data!            *
+         *                                      */
+
+        // Set myDir to what you want and it will set bot.goDir to that direction at the end.  Unless it is "none"
+        var myDir;
+        var myPos = [bot.yourBot.pos.x, bot.yourBot.pos.y];
+
+        var enemyBots = [];
+        if (bot.yourBot.id != 1) enemyBots.push(bot.bot1);
+        if (bot.yourBot.id != 2) enemyBots.push(bot.bot2);
+        if (bot.yourBot.id != 3) enemyBots.push(bot.bot3);
+        if (bot.yourBot.id != 4) enemyBots.push(bot.bot4);
+
+        
+        var availbleMines = [];
+        if (bot.yourBot.id != 1 && bot.bot1.mineCount > 0) availbleMines.push(bot.bot1mines);
+        if (bot.yourBot.id != 2 && bot.bot2.mineCount > 0) availbleMines.push(bot.bot2mines);
+        if (bot.yourBot.id != 3 && bot.bot3.mineCount > 0) availbleMines.push(bot.bot3mines);
+        if (bot.yourBot.id != 4 && bot.bot4.mineCount > 0) availbleMines.push(bot.bot4mines);
+        for (i = 0; i < bot.freeMines.length; i++) {
+            availbleMines.push(bot.freeMines[i]);
+        }
+
+
+        /*                                      *
+         * This Code Decides WHAT to do         *
+         *                                      */
+        var task;
+        // task = "taverns";
+
+        /* TAVERNS */
+        // /* if i have a low health (less than 30), then go to a tavern */
+        if (bot.yourBot.life <= 30) {
+            task = "taverns";
+        }
+
+         /* ATTACKING */
+
+        /* if mybot's life is more than or equal to a close enemy's life, attack! */
+        else if(bot.yourBot.life >= closeEnemy) {
+            task = "attackCloseBot";
+        }
+
+        // if my bot has 1 or less mines, then take other mines
+        else if(bot.yourBot.mineCount < 1){
+          task = "takeMines";
+        }
+
+        /* otherwise, keep mining */
+        else {
+            task = "freemines";
+        }
+
+
+        /*                                      *
+         * This Code Determines HOW to do it    *
+         *                                      */
+
+        // This Code find the nearest taverns and sets myDir toward that direction //
+        if (task === "freemines") {
+            var closestMine = bot.freeMines[0];
+            for (i = 0; i < bot.freeMines.length; i++) {
+                if (bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, bot.freeMines[i])) {
+                    closestMine = bot.freeMines[i];
+                }
+            }
+
+            console.log("Claiming a Free Mine!");
+            myDir = bot.findPath(myPos, closestMine);
+        }
+
+        // how to go to a tavern //
+
+        if (task === "taverns") {
+            var closestTavern = bot.taverns[0];
+            for (i = 0; i < bot.taverns.length; i++) {
+
+                /* allows mybot to find the distance from one spot to another*/
+                if (bot.findDistance(myPos, closestTavern) > bot.findDistance(myPos, bot.taverns[i])) {
+                    closestTavern = bot.taverns[i];
+                }
+            }
+
+            /* allows my bot to find the direction to get from one spot to another */
+            console.log("Get Health");
+            myDir = bot.findPath(myPos, closestTavern);
+        }
+
+        // how to attack //
+
+
+        if (task === "attackCloseBot") {
+            var closeEnemy = enemyBots[0];
+            for (i = 0; i < enemyBots.length; i++) {
+
+                //allows my bot to find the closestest enemy bot 
+                if (bot.findDistance(myPos, [closeEnemy.pos.x, closeEnemy.pos.y]) > bot.findDistance(myPos, [enemyBots[i].pos.x, enemyBots[i].pos.y])) {
+                    closeEnemy = enemyBots[i];
+                }
+            }
+            // allows my bot to attack the closest enemy bot
+            console.log("Attacking close enemy");
+            myDir = bot.findPath(myPos, [closeEnemy.pos.x, closeEnemy.pos.y]);
+        }
+
+
+        // how to path to mines //
+
+
+        if (task === "takeMines") {
+            var closestMines = availbleMines[0];
+            for (i = 0; i < availbleMines.length; i++) {
+
+                /* allows mybot to find the distance from one spot to another*/
+                if (bot.findDistance(myPos, closestMines) > bot.findDistance(myPos, availbleMines[i])) {
+                    closestMines = availbleMines[i];
+                }
+            }
+
+            /* allows my bot to find the direction to get from one spot to another */
+            console.log("attain mines");
+            myDir = bot.findPath(myPos, closestMines);
+        }
+
+        console.log(task);
+        
+        /*                                                                                                                              *
+         * This Code Sets your direction based on myDir.  If you are trying to go to a place that you can't reach, you move randomly.   *
+         * Otherwise you move in the direction set by your code.  Feel free to change this code if you want.                            */
+        if (myDir === "none") {
+            console.log("Going Random!");
+            var rand = Math.floor(Math.random() * 4);
+            var dirs = ["north", "south", "east", "west"];
+            bot.goDir = dirs[rand];
+        }
+        else {
+            bot.goDir = myDir;
+        }
+
+
+
+        ///////////* DON'T REMOVE ANTYTHING BELOW THIS LINE *//////////////
+        resolve();
+    });
+}
+bot.runGame();
+
+                </pre>
+            </code>            
+
+        </div>
+    
+
+        
+<!-- The WHAT To Do Codes -->
+  
+    <h3 id="blackHeading"> The WHAT To Do Codes </h3>
+    
+    <!-- a. Intro -->
+    
+    <button class="accordionvind"> a. Intro </button>
+    
+        <div class="panel">
+            
+            <img class="htcalcpic"
+                src="images/what2do.png">
+                
+            <ul class="info">
+                <li> To operate my bot, I need to first inform my bot 
+                what to do. In Vindinium, the main operations are going 
+                to taverns and attacking enemy players. Retrieving to 
+                a tavern helps my bot to gain health after being attacked
+                by other players, whereas attacking players could reduce 
+                one's health level. 
+                </li>
+                <li>
+                    To decide what to do under certain 
+                    circumstances, an if/else statement can inform 
+                    my bot what to do. 
+                </li>
+                <ul>
+                    <li>
+                        Like what my comment has suggested, my bot 
+                        would head to the closest tavern if its                             life is less than or equal to 30. 
+                    </li>
+                </ul>
+
+        </div>
+        
+    <!-- b. If Statement -->
+    
+    <button class="accordionvind"> b. If Statement </button>
+    
+        <div class="panel">
+            
+            <img class="htcalcpic"
+            src="images/if.png">
+            
+            <ul class="info">
+                <li>
+                    The if statement works going through the condition 
+                    to see it is qualified. 
+                </li>
+                <ul>
+                    <li>
+                        In my case, the health qualification is less than or 
+                        equal to 30
+                    </li>
+                </ul>
+                <li>
+                    If it is qualified, then it would operate the task 
+                    which contains a string of your choice. 
+                </li>
+
+                <li>
+                    If not, then it would continue to check the next 
+                    condition, which leads to the else if statement. 
+                </li>
+            </ul>
+            
+        </div>
+        
+    <!-- c. Else If Statement -->
+    
+    <button class="accordionvind"> c. Else If Statement </button>
+    
+        <div class="panel">
+            
+            <img class="htcalcpic"
+            src="images/else if.png">
+            
+            <ul class="info">
+                <li>
+                    The else if statement runs through only if the 
+                    if statement is false, and the condition in the else 
+                    if statement is true. 
+                </li>
+                <ul>
+                    <li>
+                        As for my command, It would continue to the next 
+                        else if statement if my bot's health is lower 
+                        than the enemy's health
+                    </li>
+                    <ul>
+                        <li>
+                            If not, then it would attack the closest bot
+                        </li>
+                    </ul>
+                    <li>
+                        But if my bot's mine count is more than one, then
+                        it would proceed to the else statement
+                    </li>
+                    <ul>
+                        <li>
+                            If not, then the bot would take the closest mine
+                        </li>
+                    </ul>
+                </ul>
+            </ul>
+            
+        </div>
+        
+    <!-- d. Else Statement-->
+    
+    <button class="accordionvind"> d. Else Statement </button>
+    
+        <div class="panel">
+            
+            <img class="htcalcpic"
+            src="images/else.png">
+            
+            <ul class="info">
+                <li>
+                    The else statement runs through if all of the 
+                    above conditions are not qualified, which is keep mining
+                    according to my codes
+                </li>
+   
+                <li>
+                    Possible Scenario:
+                </li>
+                <ul>
+                    <li>
+                        My bot has perfect health so it skips the 
+                        task in the IF statement, and checks the condition 
+                        of the ELSE IF statement. However, my bot is so 
+                        powerful that it owns all the available mines 
+                        so it continues to the ELSE statement and 
+                        follows the order there to keep mining.
+                    </li>
+                </ul>
+            </ul>
+            
+        </div>
+        
+<!-- The HOW To Do It Codes -->
+
+    <h3 id="blackHeading"> The HOW To Do It Codes </h3>
+    
+    <!-- a. Intro -->
+    
+    <button class="accordionvind"> a. Intro </button>
+    
+        <div class="panel">
+            
+            <p class="info">
+                In comparison to the WHAT to do section, 
+                the HOW to do it part is equally important in order 
+                to create a functional robot. 
+            </p>
+                
+            <img class="htvindpic"
+                src="images/how2doit.png">
+                
+            <ul class="info">
+                <li> To go to the closest tavern, my bot needs to know 
+                how to get there and the if statement is also 
+                applicable here. </li>
+                <ul>
+                    <li>
+                        For the if condition, make sure to check if the 
+                        task is equal to the string you have created 
+                        previously for the same operation. 
+                    </li>
+                    <li>
+                        For example, I have created a string called 
+                        "taverns" (in my WHAT to do section) so in my 
+                        HOW to do it section, I would refer back to it 
+                        when I make the task equal to "taverns"
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        
+    <!-- b. Code Block -->
+    
+    <button class="accordionvind"> b. Code block </button>
+    
+        <div class="panel">
+            
+            <img class="htcalcpic"
+            src="images/tavern.png">
+            
+            <ul class="info">
+                <li>
+                    Then I created a code block, which will help my bot 
+                    to find the closest available tavern if my bot 
+                    needs to retrieve health.
+                </li>
+                <ul>
+                    <li>
+                        The code block here first contains a var to 
+                        store data for the closest tavern
+                    </li>
+                    <li>
+                        Then to define the closest tavern, it would 
+                        have to run through the for loop to compare the 
+                        distance of each tavern to find the closest 
+                        one
+                    </li>
+                    <ul>
+                        <li>
+                            The for loop often used when you want to 
+                            run through a list of options (it’s tavern 
+                            arrays in this case)
+                        </li>
+                    </ul>
+                </ul>
+                <li>
+                    There are 3 total statements for a for loop:
+                </li>
+                <ul>
+                    <li>
+                        The first statement determines the first option 
+                        of the array. 
+                    </li>
+                    <li>
+                        The second statement determines the total 
+                        amount possible options to run through. 
+                    </li>
+                    <li>
+                        The third statement determines the way you want 
+                        it to run through the list. Since my third 
+                        statement is i++, it means that it would check 
+                        the next option each time
+                    </li>
+                </ul>
+                <li>
+                    After an option is detected in the array, it 
+                    would go through an if statement
+                </li>
+                <ul>
+                    <li>
+                        This if statement compares the the distance 
+                        between the first option on the array and the 
+                        current detecting option. 
+                    </li>
+                    <ul>
+                        <li>
+                            If the first option is closer, then it 
+                            would stick with it. 
+                        </li>
+                        <li>
+                            But if the current option is closer, 
+                            then it would replace the previous closest 
+                            tavern.
+                        </li>
+                        <li>
+                            This continues throughout the array until 
+                            the closest tavern is identified.
+                        </li>
+                    </ul>
+                </ul>
+                <li>
+                    After the system finds that the for loop contains 
+                    the closest tavern, it would proceed to console.log
+                </li>
+                <ul>
+                    <li>
+                        The console.log would direct the bot to 
+                        the closest tavern
+                    </li>
+                </ul>
+                <li>
+                    The other HOW to do bot functions follow similar 
+                    algorithm:
+                </li>
+            <img class="htvindpic"
+            src="images/attacknsteal.png">
+            </ul>
+        </div>
+        
+
+
+<!-- AI -->
+
+    <h3 id="blackHeading"> What I Have Learned About AI </h3>
+    
+
+    <button class="accordionvind"> What I Have Learned About AI </button>
+    
+        <div class="panel">
+            
+            <p class="info">
+                NOTHING!
+            </p>
+                
+                
+        </div>
+  
+     
+<script>
+    var acc = document.getElementsByClassName("accordionvind");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+
+}
+</script>
+
+
+     </body>
+</html>
+        
+
+    
+    
+    
+    

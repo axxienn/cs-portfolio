@@ -448,7 +448,7 @@
      
      .panel.show {
           opacity: 1;
-          max-height: 2000px;
+          max-height: 3000px;
           margin-left: 90px;
           width: 1140px;
      }
@@ -510,6 +510,15 @@
           border-radius: 100px; 
           padding: 3px;
           font-family: cursive; 
+     }
+     
+     #blackHeading {
+          color: black;
+          font-family: cursive;
+          font-size: 3em;
+          margin-top: 60px;
+          text-align: center;
+          margin-bottom: 10px;
      }
      
      #input {
@@ -687,9 +696,9 @@
 
 /* to do ends*/
 
-/* how to 2 starts*/
+/* how to calc starts*/
 
-     h6 {
+     #calcHeading {
           text-align: center;
           width: 230px;
           color: black;
@@ -701,7 +710,7 @@
           border-radius: 10px;
           padding: 5px;
           border-style: solid;
-          background-color: rgb(255, 206, 231);
+          background-color: #e81b1b;
      }
      
      .htcalcpic {
@@ -731,7 +740,7 @@
      }
       
      .accordioncalc.active, .accordioncalc:hover {
-           background-color: rgb(255, 206, 231);
+           background-color: #e81b1b;
      }
      
      .accordioncalc:after {
@@ -745,10 +754,53 @@
      }
      
 
-/* how to 2 ends */
+/* how to calc ends */
 
+/* how to vind starts */
+     
+     .htvindpic {
+          margin-top: 20px;
+          margin-bottom: 10px;
+          margin-left: 70px;
+          border: 2px solid;
+          border-radius: 20px;
+          padding: 10px;
+          width: 90%;
+     }
 
+     .accordionvind {
+          background-color: rgb(232, 234, 237);
+          cursor: pointer;
+          text-align: left;
+          padding: 18px;
+          width: 1250px;
+          border: 4px solid;
+          border-color: black;
+          border-radius: 10px;
+          outline: none;
+          font-family: cursive;
+          font-size: large;
+          transition: 0.3s;
+          margin-left: 50px;
+          margin-bottom: 3px;
+     }
+      
+     .accordionvind.activeT, .accordionvind:hover {
+           background-color: #fffb99;
+     }
+     
+     .accordionvind:after {
+          content: '\02795';
+          font-size: 13px;
+          float: right;
+     }
+     
+     .accordioncalc.active:after {
+          content: "\2796";
+     }
+     
 
+/* how to vind ends*/
 
 
 
