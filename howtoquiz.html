@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="Mainstyle.css" type="text/css" />
 </head>
 
-<body id="howtocalcIMG" background="https://i0.wp.com/infotainmentproducties.nl/wp-content/uploads/Quiz-1395-x-868.jpg">
+<body id="howtocalcIMG" background="http://www.planwallpaper.com/static/images/518079-background-hd.jpg">
 
     <!-- Navbar starts here -->
 
@@ -36,254 +36,78 @@
 
     <!-- Step 1: HTML -->
 
-    <h3 id="blackHeading"> Step 1: HTML </h3>
+    <h3 id="quiHeading"> Javascript </h3>
 
-    <!-- a. -->
+<p class="quizinfo1"> After the user selects his or her choice and submits it, 
+you would to find the result by counting the mode of the teacher who was 
+chosen. These are my codes:
+ </p>
 
-    <button class="accordionquiz"> a. Structure </button>
-
-    <div class="panel">
-
-        <p class="info"> Set up the basic HTML format for structuring a page </p>
-
-        <img class="htcalcpic" src="http://help.madcapsoftware.com/flare12/Content/Resources/Images/page_structure_example.png">
-
-        <ul class="info">
-            <li> Refer back to the HTML and CSS section of the <span> <a href="howto.html"> How To 
-                Code a Menu </a> </span> page for clarification </li>
-    </div>
-
-    <!-- b. -->
-
-    <button class="accordionquiz"> b. Adding Title and Box </button>
-
-    <div class="panel">
-
-        <p class="info"> Then add a title to label the questions and construct
-            a box to contain the options to the question. Here is my structure: </p>
-
-        <img class="htcalcpic" src="images/title&box.png">
-
-        <ul class="info">
-
-            <li> The input tag is used for an input space where the user can enter data </li>
-            <li> Specifying the type of the input limits the user to insert numbers only </li>
-            <li> Labeling the ID as "input" and "input2" will help CSS to identify that this is the area you want to modify. </li>
-            <li> Essentially, this is what I have created: </li>
-
-            <img class="htcalcpic" src="images/b1.png">
-
-    </div>
-
-    <!-- c. -->
-
-    <button class="accordionquiz"> c. Adding Options </button>
-
-    <div class="panel">
-
-        <p class="info"> After creating two input areas for the calculator, 
-           code the calculator's operations in between. The operations that I have included are addition, subtraction, multiplication, division, exponent, square root, sine, cosine, and tangent. My codes
-            look like this: </p>
-
-        <img class="htcalcpic" src="images/c.png">
-
-        <ul class="info">
-
-            <li> A
-                < select> tag is used to for a dropdown list. </li>
-            <li> The options that nest inside of the select tag are used to list out all the options of the math operation list </li>
-            <ul>
-                <li>In this case, it would be the signs of all of my chosen operations</li>
-            </ul>
-            <li> Adding the value attribute works by sending the information to the server when submitted </li>
-            <li> This is what I have created so far: </li>
-
-            <img class="htcalcpic" src="images/c1.png">
-
-
-    </div>
-
-    <!-- d. -->
-
-    <button class="accordionquiz"> d. The Submit button </button>
-
-    <div class="panel">
-
-        <p class="info"> To complete the calculator, you need to have a calculate button to run the function, along with an area for answer display. These are my codes: </p>
-
-        <img class="htcalcpic" src="images/d.png">
-
-
-        <ul class="info">
-
-            <li> The
-                < button> tag is what makes a box clickable </li>
-            <ul>
-                <li> I used it for a calculate button or "=" </li>
-            </ul>
-            <li> Then I added a paragraph tag to specify that the area below would display the answer </li>
-            <li> Where the answer is going to display is the
-                < div> tag's job to display it </li>
-            <li> Including everything from previous steps, this is how it will turn out: </li>
-
-            <img class="htcalcpic" src="images/d1.png">
-    </div>
-
-    <!-- e. -->
-
-    <button class="accordionquiz"> e. Directing to Javascript </button>
-
-    <div class="panel">
-
-        <p class="info"> However, HTML can only do so much in terms of constructing the page, that is why we need to link this HTML tab to a Javascript in order to make the calculator work. Mine looks like this: </p>
-
-        <img class="htcalcpic" src="images/e.png">
-
-        <ul class="info">
-
-            <li> A
-                < script> tag is used to define javascript or directs the HTML to an external file through src </li>
-            <li> The src attribute directs this HTML to an external file by specifying the URL of the external file </li>
-            <ul>
-                <li> The external file in this case would be "calc.js" because that is what I named it </li>
-            </ul>
-            <li> If you do not want to create an external file for javascript, you can also insert a
-                < script>
-                    tag on the bottom of HTML page for the same result </li>
-        </ul>
-    </div>
-
-
-
-
-    <!-- Step 2: Javascript -->
-
-    <h3 id="blackHeading"> Step 2: Javascript </h3>
-
-
-    <!-- a. -->
-
-    <button class="accordionquiz"> a. Gather Elements from HTML </button>
-
-    <div class="panel">
-
-        <p class="info"> To start off a javascript(JS) file, gather elements from HTML. Here is how I did mine: </p>
-
-        <img class="htcalcpic" src="images/jsA.png">
-
-        <ul class="info">
-            <li> The keyword var, or variable, is used for storing data values in JS </li>
-            <li> Every var must be followed by an identifier </li>
-            <ul>
-                <li> The identifiers from above would be "input", "select", "input2", "button", "ans", and "answer" </li>
-                <li> An identifier should be be unique to prevent different variables operating the same function </li>
-            </ul>
-            <li> The equal sign (=) in JS is known as an assignment operator. This functions by assigning a value to the variable. </li>
-            <ul>
-                <li>Take the first variable from above for example, document.getElementById("input") is the value that is assigned to the var input </li>
-            </ul>
-            <li> document.getElementById(" ") is used when you want to get information from another file </li>
-            <ul>
-                <li> The Document Object Model (DOM) is a common method to control the structure as well as style of a HTML page, and getting an element by ID is just one way to do it </li>
-                <li> camelCase is a JS style of capitalizing the first letter of every word, except for the first word. The purpose of camelCase is to allow readers to recognize long unspaced words easier </li>
-            </ul>
-    </div>
-
-    <!-- b. -->
-
-    <button class="accordionquiz"> b. Result Possibilities </button>
-
-    <div class="panel">
-
-        <p class="info"> After the user selects their choices and submits it, you
-        would to find the results by counting the mode of the teacher who was
-        chosen. These are my codes:
-        
         <img class="htcalcpic" src="images/resultPossibilities.png">
 
-        <ul class="info">
-            <li> addEventListener() is a method to inform the program to operate its specific function when the first parameter is activated </li>
+        <ul class="quizinfo">
 
+            <li> Since you want your program to first detect the chosen option, 
+            a for loop is smart choice to use </li>
+            <li> There are a total of 3 statements within a for loop </li>
             <ul>
-                <li> The period between "button" and "addEventListener" can be seen or read as "addEventListener of the button" </li>
-                <ul>
-                    <li> Since the HTML functions were already obtained from the previous step, the var button informs the program that whatever action taken is performed on the calculate button </li>
-                </ul>
-            </ul>
+                <li> Statement 1: sets the variable for its starting point </li>
+                <li>
+                    Statement 2: sets a condition to check if it’s true. 
+                    <ul>
+                        <li>
+                            If true then it would continue to run rest of the 
+                            for loop. If it’s false then it would move on
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Statement 3: states the increment 
+                    <ul>
+                        <li>
+                            After checking a statement, it needs to know how 
+                            many values to increase after each statement
+                        </li>
+                    </ul>
+                </li>
+             </ul>
+             <li>
+                    Then inside the for loop, add if statements to accumulate 
+                    data for the result
+                    <ul>
+                        <li>
+                            The if statement works going through the condition 
+                            to see it is qualified.
+                            <ul>
+                                <li>
+                                    Here, if the selected color is equal to 
+                                    (===) or labeled with the value “Mr. Hesby”,
+                                    then the var hesby would store one point 
+                                    (hesby++)
 
-            <li> The first parameter is the type of event, which is "click" in this case. In other words, the calculate button would do something when the user clicks it. </li>
-            <li> The second parameter determines its function when the first parameter is activated, which is "function" in this case. So when the user clicks the calculate button, it would function. </li>
-            <li> Then I created variables for the input boxes and operations of the calculator </li>
-            <ul>
-                <li> Ex: For the first input box, I created "var number" and assigned it to "input.value" </li>
-                <ul>
-                    <li> The function of value property (.value) here is to read the value a user inserts in the first input area </li>
-                    <li> The first input area is identified as "input", an identifier created in the beginning </li>
-                    <li> Essentially, the program detects the inserted value in the first input box and all this is going to be recognized as var number in the following </li>
-                </ul>
-            </ul>
-
-        </ul>
-    </div>
-
-
-
-    <!-- Step 3: CSS -->
-
-    <h3 id="blackHeading"> Step 3: CSS </h3>
-
-    <!-- a. -->
-
-    <button class="accordionquiz"> a. CSS </button>
-
-    <div class="panel">
-
-        <p class="info"> Adding CSS is very straightforward. A basic CSS format looks like this: </p>
-
-        <img class="bhtml2" src="http://www.wwp.northeastern.edu/outreach/seminars/_utils/gfx/css_ruleset_06.png">
-
-        <ul class="info">
-            <li> Refer back to the Basics of CSS and CSS Structure of the <span> <a href="howto.html"> 
-                How To Code a Menu </a> </span> page for for basic informations </li>
-            <li> For reference, B to D are the CSS codes that I have created for my <span> <a href="calc.html"> 
-                calculator page </a> </span> </li>
-    </div>
-
-    <!-- b. -->
-
-    <button class="accordionquiz"> b. Box </button>
-
-    <div class="panel">
-
-        <img class="htcalcpic" src="images/boxcss.png">
-
-    </div>
-
-    <!-- c. -->
-
-    <button class="accordionquiz"> c. Submit Button </button>
-
-    <div class="panel">
-
-        <img class="htcalcpic" src="images/submitcss.png">
-
-    </div>
-
-
-
-    <script>
-        var acc = document.getElementsByClassName("accordionquiz");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].onclick = function() {
-                this.classList.toggle("active");
-                this.nextElementSibling.classList.toggle("show");
-            }
-
-        }
-    </script>
-
+                                </li>
+                            </ul>
+                            <li>
+                                If not, then it would continue to check the 
+                                next condition, which leads to the else if 
+                                statement.
+                                <ul>
+                                    <li>
+                                        If it the selected color equal to 
+                                        “Mr. Hesby” is UNTRUE, then it would 
+                                        move on and check if any of the 
+                                        following conditions are true
+                                    </li>
+                                </ul>
+                            </li>
+                        </li>
+                    </ul>
+                <li>
+                    This algorithm is repeated for all questions in 
+                    order to collect data to find the most related teacher
+                </li>
+                </li>
+                
 
 </body>
 
