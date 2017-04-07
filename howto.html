@@ -1,273 +1,263 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> How To </title>
-            <link rel="stylesheet" href="Mainstyle.css" type="text/css" />
-    </head>
-    <body background="http://freephotos.atguru.in/hdphotos/black-and-blue-wallpapers/blue-black-wallpaper-5.jpg">
 
-        <!-- Navbar starts here -->  
-        
-        <ul id="navbar">
-            <li> <a href="index.html"> About Me </a></li>
-            <li> <a href="hardware.html"> Hardware </a></li>
-            <li> <a href="calc.html"> Calculator </a></li>
-            <li> <a href="todo.html"> To Do List </a></li>
-            
-                <li class="howtoDD">
-                    <a href="#" class="howtobtn"> How To </a>
-                  <div class="howtoContent"> 
-                    <a href="howto.html"> code a menu  </a>
-                    <a href="howtocalc.html"> code a calculator </a>
-                  </div>
-                </li>
-                
-            <li> <a href="vind.html"> Vindinium </a></li>
-            <li> <a href="#"> Big Project </a></li>
-        </ul>
-        <!-- Navbar ends -->
-        
-    <img id="title"
-    src="data:image/png;base64,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">
+<head>
+    <title> How To </title>
+    <link rel="stylesheet" href="Mainstyle.css" type="text/css" />
+</head>
 
-<!-- HTML vs. CSS -->
-  
+<body background="http://freephotos.atguru.in/hdphotos/black-and-blue-wallpapers/blue-black-wallpaper-5.jpg">
+
+    <!-- Navbar starts here -->
+
+    <ul id="navbar">
+        <li> <a href="index.html"> About Me </a></li>
+        <li> <a href="hardware.html"> Hardware </a></li>
+        <li> <a href="calc.html"> Calculator </a></li>
+        <li> <a href="todo.html"> To Do List </a></li>
+
+        <li class="howtoDD">
+            <a href="#" class="howtobtn"> How To </a>
+            <div class="howtoContent">
+                <a href="howto.html"> code a menu  </a>
+                <a href="howtocalc.html"> code a calculator </a>
+                <a href="howtoquiz.html"> code a quiz </a>
+            </div>
+        </li>
+
+        <li> <a href="vind.html"> Vindinium </a></li>
+        <li> <a href="bproject.html"> Big Project </a></li>
+    </ul>
+    <!-- Navbar ends -->
+
+    <img id="title" src="data:image/png;base64,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">
+
+    <!-- HTML vs. CSS -->
+
     <h3> HTML vs. CSS</h3>
-    
-    <button class="accordion"> HTML Intro </button>
-        <div class="panel">
-            <ul>
-                <li class="info"> Stands for the Hypertext Markup Language </li>
-                <li class="info"> It is the coding language for creating and 
-                    structuring a website </li>
-                <li class="info"> It's also where you insert your visible
-                    informations and images onto the webpage </li>
-                <li class="info"> For example, a commonly used tag goes like 
-                    this: 
-                    <ul> 
-                        <li> <tagname > content </tagname > </li>
-                        <li> Most HTML elements contain an opening tag and a
-                        closing tag. The difference between the tags is that a 
-                        closing tag has a slash after the opening angle bracket,
-                        < . </li>
-                    </ul>
-                </li> 
-        </div>
-        
-    <button class="accordion"> CSS Intro</button>
-        <div class="panel">
-            <ul>
-                <li class="info"> Stands for Cascading Style Sheets </li>
-                <li class="info"> CSS acts like an aid to HTML. It helps
-                    to construct the informations into something more organized 
-                    and compelling </li>
-                <li class="info"> It's responsible for complex layouts and
-                    designs. 
-                    <ul>
-                        <li> This includes the margin spaces, padding thickness,
-                    and floats </li>
-                    </ul> 
-                </li>
-                <li class="info"> It's able to control and modify multiple pages
-                    at once. (CCS External Style Sheet)
-                    <ul>
-                        <li> saves time and work</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
 
-<!-- BASCIS -->
+    <button class="accordion"> HTML Intro </button>
+    <div class="panel">
+        <ul>
+            <li class="info"> Stands for the Hypertext Markup Language </li>
+            <li class="info"> It is the coding language for creating and structuring a website </li>
+            <li class="info"> It's also where you insert your visible informations and images onto the webpage </li>
+            <li class="info"> For example, a commonly used tag goes like this:
+                <ul>
+                    <li>
+                        <tagname> content </tagname>
+                    </li>
+                    <li> Most HTML elements contain an opening tag and a closing tag. The difference between the tags is that a closing tag has a slash after the opening angle bracket,
+                        < . </li>
+                </ul>
+                </li>
+    </div>
+
+    <button class="accordion"> CSS Intro</button>
+    <div class="panel">
+        <ul>
+            <li class="info"> Stands for Cascading Style Sheets </li>
+            <li class="info"> CSS acts like an aid to HTML. It helps to construct the informations into something more organized and compelling </li>
+            <li class="info"> It's responsible for complex layouts and designs.
+                <ul>
+                    <li> This includes the margin spaces, padding thickness, and floats </li>
+                </ul>
+            </li>
+            <li class="info"> It's able to control and modify multiple pages at once. (CCS External Style Sheet)
+                <ul>
+                    <li> saves time and work</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- BASCIS -->
 
     <h3> HTML & CSS Basics </h3>
-    
-    <button class="accordion"> Basics of HTML </button>
-        <div class="panel">
-            <p class="info">
-                A basic HTML format for structuring a page looks like this:
-            </p>
-               <img class="bhtml"
-                src="http://help.madcapsoftware.com/flare12/Content/Resources/Images/page_structure_example.png">
-            <ul class="info">
-                <li> <font color=red> Every HTML document
-                must contain < html > and < /html >. It describes the HTML
-                document.
-                </font> </li>
-                <li> <font color=purple> The purpose of a < head >
-                tag is to insert informations about the document.
-                </font> </li>
-                <li> <font color=green> The < title > tag is 
-                what you use to insert a title. </font> </li>
-                <li> <font color="#3385ff"> The < body > 
-                tag is used to contain the visible page contents.
-                </font> </li>
-                <li> <font color=orange> The < h1 >
-                means heading.
-                    <ul>
-                        <li> There is also < h2 >, < h3 >, all the way to 
-                        < h6 >, rating from the least to most important. </li>
-                    </ul>
-                </font> </li>
-                <li> <font color=blue> The paragraph tag, < p >, 
-                indicates a paragraph. </li>
-                </font> </li>
-            </ul>
-        </div>
-        
-    <button class="accordion"> Basics of CSS (External Sytle Sheet) </button>
-        <div class="panel">
-            <p class="info"> A basic CSS format looks like this: </p>
-            <img class="bhtml2"
-                src="http://www.wwp.northeastern.edu/outreach/seminars/_utils/gfx/css_ruleset_06.png">
-            <ul class="info">
-                <li> <font color="#800000"> The h1 is known as the selector. It 
-                indicates that you are modifying specifically heading 1. 
-                </font> 
-                    <ul> <font color="#666666">
-                        <li> Then you would use an opening and closing 
-                        braces, { }, to contain the modifications. 
-                        The braces can also be identified as rulesets. </li>
-                        </font>
-                    </ul>
-                    <ul> <font color="#666666">
-                        <li> Everything inside of a ruleset are called 
-                        declaration block(s). A ruleset can contain multiple 
-                        declarations and every declaration block consists of a 
-                        property and value. </li> </font>
-                    </ul>
-                </li>
-                <li> To put the content in the center, insert
-                <span style="color:green"> text-align: </span> 
-                <span style="color: blue"> center; </span>
-                    <ul>
-                        <li> <font color="green"> In coding, the text-align
-                        is known as a property. The function of a property 
-                        is to specify your command. This includes 
-                        changing the text alignment, font color, the space 
-                        between one another, and so on.</font> </li>
-                        <ul>
-                            <li> <font color="#666666"> After you've
-                            inserted a property, it must be followed by a 
-                            colon. A colon lets the program know that it is 
-                            the end of a property.
-                            </font></li>
-                        </ul>
-                    </ul> 
-                    <ul>
-                        <li> <font color="blue"> Every property follows
-                        by a value. The value is used to help the property 
-                        to identify further that this is the certain
-                        change you want to make. In this case, the 
-                        instruction- center -would be the value.
-                        </font> </li>
-                        <ul>
-                            <li> <font color="#666666"> After every value,
-                            a semi-colon is necessary to conclude the
-                            declaration. </font> </li>
-                        </ul>
-                    </ul>
-                </li>
-                <li>
-                    To change the font into bold, insert 
-                    <span style="color:green"> font-weight: </span>
-                    <span style="color: blue"> bold; </span>
-                </li>
-                <li>
-                    To change the font-color into blue, insert 
-                    <span style="color:green"> color: </span>
-                    <span style="color: blue"> blue; </span>
-                </li>
-            </ul>
-        </div>
 
-<!-- menu -->
+    <button class="accordion"> Basics of HTML </button>
+    <div class="panel">
+        <p class="info">
+            A basic HTML format for structuring a page looks like this:
+        </p>
+        <img class="bhtml" src="http://help.madcapsoftware.com/flare12/Content/Resources/Images/page_structure_example.png">
+        <ul class="info">
+            <li>
+                <font color=red> Every HTML document must contain
+                    < html> and
+                        < /html>. It describes the HTML document.
+                </font>
+            </li>
+            <li>
+                <font color=purple> The purpose of a
+                    < head>
+                        tag is to insert informations about the document.
+                </font>
+            </li>
+            <li>
+                <font color=green> The
+                    < title> tag is what you use to insert a title. </font>
+            </li>
+            <li>
+                <font color="#3385ff"> The
+                    < body>
+                        tag is used to contain the visible page contents.
+                </font>
+            </li>
+            <li>
+                <font color=orange> The
+                    < h1>
+                        means heading.
+                        <ul>
+                            <li> There is also
+                                < h2>,
+                                    < h3>, all the way to
+                                        < h6>, rating from the least to most important. </li>
+                        </ul>
+                </font>
+            </li>
+            <li>
+                <font color=blue> The paragraph tag,
+                    < p>, indicates a paragraph. </li>
+            </font>
+            </li>
+        </ul>
+    </div>
+
+    <button class="accordion"> Basics of CSS (External Sytle Sheet) </button>
+    <div class="panel">
+        <p class="info"> A basic CSS format looks like this: </p>
+        <img class="bhtml2" src="http://www.wwp.northeastern.edu/outreach/seminars/_utils/gfx/css_ruleset_06.png">
+        <ul class="info">
+            <li>
+                <font color="#800000"> The h1 is known as the selector. It indicates that you are modifying specifically heading 1.
+                </font>
+                <ul>
+                    <font color="#666666">
+                        <li> Then you would use an opening and closing braces, { }, to contain the modifications. The braces can also be identified as rulesets. </li>
+                    </font>
+                </ul>
+                <ul>
+                    <font color="#666666">
+                        <li> Everything inside of a ruleset are called declaration block(s). A ruleset can contain multiple declarations and every declaration block consists of a property and value. </li>
+                    </font>
+                </ul>
+            </li>
+            <li> To put the content in the center, insert
+                <span style="color:green"> text-align: </span>
+                <span style="color: blue"> center; </span>
+                <ul>
+                    <li>
+                        <font color="green"> In coding, the text-align is known as a property. The function of a property is to specify your command. This includes changing the text alignment, font color, the space between one another, and so on.</font>
+                    </li>
+                    <ul>
+                        <li>
+                            <font color="#666666"> After you've inserted a property, it must be followed by a colon. A colon lets the program know that it is the end of a property.
+                            </font>
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>
+                        <font color="blue"> Every property follows by a value. The value is used to help the property to identify further that this is the certain change you want to make. In this case, the instruction- center -would be the value.
+                        </font>
+                    </li>
+                    <ul>
+                        <li>
+                            <font color="#666666"> After every value, a semi-colon is necessary to conclude the declaration. </font>
+                        </li>
+                    </ul>
+                </ul>
+            </li>
+            <li>
+                To change the font into bold, insert
+                <span style="color:green"> font-weight: </span>
+                <span style="color: blue"> bold; </span>
+            </li>
+            <li>
+                To change the font-color into blue, insert
+                <span style="color:green"> color: </span>
+                <span style="color: blue"> blue; </span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- menu -->
 
     <h3> How to code a menu </h3>
-    
+
     <button class="accordion"> HTML Structure </button>
-        <div class="panel">
-            <p class="info"> To create a menu, you need to first insert your 
-            contents. For the menu that I've created on my page,
-            my HTML structure looks like this: </p>
-            <img class="menupic"
-            src="images/menu1.png">
-            <ul class="info">
-                <li> <font color="#990000"> An < ul > tag stands for unordered 
-                list. Its function is to create or set off a bulleted list. 
-                There is also an ol tag, < ol >. It is an ordered list 
-                that set off a numbered list or procedures. In this case 
-                however, the ul tag is a better option than an ol tag 
-                because you do not need your menu to be numbered.
-                </font> </li>
-                <li> <font color="orange"> Labeling the ID as "navbar" will 
-                help CSS to identify that this is the area you want to 
-                modify. </font> </li>
-                <li> <font color="blue"> A li tag, < li >, stands for 
-                list item. Its function is to insert the contents of a 
-                bullet point. Using both the unordered list tag and the 
-                list item tag will give you an unordered list. The li tag 
-                also works with ordered lists. </font> </li>
-                <li> <font color="green"> An < a > tag indicates a 
-                hyperlink. It allows you to link your current page to 
-                another page. The < a > tag is an important tag for 
-                creating a menu because bringing visitors to another page 
-                as a shortcut form is the whole purpose of a menu.
-                </font> </li>
-                <li> <font color="red"> The href attribute is used to 
-                insert a page URL. The < a > tag needs a href attribute in 
-                order to be activated as a hyperlink. 
-                </font> </li>
-            </ul>
-        </div>
-        
+    <div class="panel">
+        <p class="info"> To create a menu, you need to first insert your contents. For the menu that I've created on my page, my HTML structure looks like this: </p>
+        <img class="menupic" src="images/menu1.png">
+        <ul class="info">
+            <li>
+                <font color="#990000"> An
+                    < ul> tag stands for unordered list. Its function is to create or set off a bulleted list. There is also an ol tag,
+                        < ol>. It is an ordered list that set off a numbered list or procedures. In this case however, the ul tag is a better option than an ol tag because you do not need your menu to be numbered.
+                </font>
+            </li>
+            <li>
+                <font color="orange"> Labeling the ID as "navbar" will help CSS to identify that this is the area you want to modify. </font>
+            </li>
+            <li>
+                <font color="blue"> A li tag,
+                    < li>, stands for list item. Its function is to insert the contents of a bullet point. Using both the unordered list tag and the list item tag will give you an unordered list. The li tag also works with ordered lists. </font>
+            </li>
+            <li>
+                <font color="green"> An
+                    < a> tag indicates a hyperlink. It allows you to link your current page to another page. The
+                        < a> tag is an important tag for creating a menu because bringing visitors to another page as a shortcut form is the whole purpose of a menu.
+                </font>
+            </li>
+            <li>
+                <font color="red"> The href attribute is used to insert a page URL. The
+                    < a> tag needs a href attribute in order to be activated as a hyperlink.
+                </font>
+            </li>
+        </ul>
+    </div>
+
     <button class="accordion"> CSS Structure </button>
-        <div class="panel">
-            <p class="info"> Now that I've entered the contents of my menu,
-            I would need to personalize it. As mentioned in CSS introduction, 
-            CSS allows me to modify the layouts and designs. The CCS 
-            structure of my menu looks like this: </p>
-            <img class="menupic"
-            src="images/menu2.png">
-            <ul class="info">
-                <li> <font color="orange"> Since the navigation bar was labeled 
-                as an ID in the HTML, you use a hashtag (#) in CSS to indicate 
-                that this is the section you want to modify. </font> </li>
-                <li> <font color="blue"> To modify the list items more 
-                specifically, you would add li after #navbar. This way, every 
-                customization you make would direct only to the list items.
-                </font> </li>
-                <li> <font color="red"> The display of inline-table is 
-                important if you want your tabs to be aligned. If this 
-                input is missing, the menu of your website would be in a 
-                listed form down the page. </font> </li>
-                <li> <font color="#66ff33"> The margin and padding functions
-                are responsible for the spacing in between contents.
-                Specifically, the margin's thickness determines the area 
-                outside of the border whereas the padding's thickness
-                determines the area between the border and the contents.
-                </font> </li>
-                <img class="expic"
-                src="images/menu3.png">
-                <li> <font color="#ff66d9"> In fact, the declaration
-                blocks are relatively straightforward and self 
-                explanatory. For instance, the font size changes 
-                the word size while the background color changes the 
-                background color. </font> </li>
-            </ul>
-        </div>  
+    <div class="panel">
+        <p class="info"> Now that I've entered the contents of my menu, I would need to personalize it. As mentioned in CSS introduction, CSS allows me to modify the layouts and designs. The CCS structure of my menu looks like this: </p>
+        <img class="menupic" src="images/menu2.png">
+        <ul class="info">
+            <li>
+                <font color="orange"> Since the navigation bar was labeled as an ID in the HTML, you use a hashtag (#) in CSS to indicate that this is the section you want to modify. </font>
+            </li>
+            <li>
+                <font color="blue"> To modify the list items more specifically, you would add li after #navbar. This way, every customization you make would direct only to the list items.
+                </font>
+            </li>
+            <li>
+                <font color="red"> The display of inline-table is important if you want your tabs to be aligned. If this input is missing, the menu of your website would be in a listed form down the page. </font>
+            </li>
+            <li>
+                <font color="#66ff33"> The margin and padding functions are responsible for the spacing in between contents. Specifically, the margin's thickness determines the area outside of the border whereas the padding's thickness determines the area between the border
+                    and the contents.
+                </font>
+            </li>
+            <img class="expic" src="images/menu3.png">
+            <li>
+                <font color="#ff66d9"> In fact, the declaration blocks are relatively straightforward and self explanatory. For instance, the font size changes the word size while the background color changes the background color. </font>
+            </li>
+        </ul>
+    </div>
 
     <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function(){
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
-  }
-}
-</script>
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    </script>
 
 
-     </body>
+</body>
+
 </html>

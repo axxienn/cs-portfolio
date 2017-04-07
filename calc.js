@@ -1,4 +1,4 @@
-//calculator (gathering elements from HTML)
+//big project (gathering elements from HTML)
 var input = document.getElementById("input");
 var select = document.getElementById("operator");
 var input2 = document.getElementById("input2");
